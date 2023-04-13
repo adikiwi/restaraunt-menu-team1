@@ -4,7 +4,9 @@ function FoodData(name,picNum,price,type){
     this.price = price;
     this.type = type;
     this.description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vel unde aut fugit vitae obcaecati hic recusandae libero molestiae maiores!";
-    
+    this.priceAdd = function priceAdd(){
+        cost.innerHTML = 'asdf'
+    }
 
 }
 
@@ -32,6 +34,7 @@ function clear(){
 
 function displayOnUI(array){
     clear()
+    
     array.forEach(el=>{
         let div = document.createElement('div');
         div.classList.add('dish')
@@ -51,6 +54,7 @@ function displayOnUI(array){
         `
         div.appendChild(descr);
     })
+    showPrice();
 }
 displayOnUI(array)
 
