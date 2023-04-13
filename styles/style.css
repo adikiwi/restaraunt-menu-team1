@@ -1,0 +1,8 @@
+.hide {
+  display: none;
+}
+
+active {
+  background-color: #6759ff;
+  color: #ffffff;
+}
