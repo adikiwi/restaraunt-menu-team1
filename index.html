@@ -8,8 +8,34 @@
     <title>Restaraunt Menu</title>
 </head>
 <body>
-    <h1>Restaraunt Menu</h1>
-    <h2>try</h2>
+    <header>
+        <h1>Restaraunt Menu</h1>
+        <hr>
+        <nav>
+            <button id="all" onclick="displayOnUI(array)">All</button>
+            <button id="breakfast" onclick="filter('breakfast')">Breakfast</button>
+            <button id="lunch" onclick="filter('lunch')">Lunch</button>
+            <button id="shakes" onclick="filter('shakes')">Shakes</button>
+            <button id="dinner" onclick="filter('Dinner')">Dinner</button>
+            <button id="cartBtn" class="cart">Cart</button>
+            <p id="total">Total:</p>
+        </nav>
+    </header>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <button class="reset">reset</button>
+          <p class="namesOfDishes">Some text in the Modal..</p>
+        </div>
+      
+      </div>
+    
+    <menu>
+        
+    </menu>
 
     <script src="./js/main.js"></script>
 </body>
